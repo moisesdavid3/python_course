@@ -16,3 +16,14 @@ oper = input('Ingrese la operacion que desea realizar, solo ingrese la primera l
 if oper == 'S':
     sum = a+b
     print(sum)
+elif oper == 'R':
+    sum = a-b
+    print(sum)
+elif oper == 'M':
+    sum = a*b
+    print(sum)
+elif oper == 'D':
+    sum = a/b
+    print(sum)
+
+    
