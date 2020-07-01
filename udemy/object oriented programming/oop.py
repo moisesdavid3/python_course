@@ -5,12 +5,27 @@
 
 # Class - blueprint of what we wanna create, basic attributes, methods or actions that it can take
 
-# class BigObject:  # class
-#     pass
+class NameOfClass():
+    class_attribute = 'value'
+
+    def __init__(self, param1, param2):  # instanciate
+        self.param1 = param1
+        self.param2 = param2
+
+    def method(self):  # methods that the objects will have access to
+        pass  # code
+
+    @classmethod
+    def cls_method(cls, param1, param2):
+        pass  # code
+
+    @staticmethod
+    def stc_method(param1, param2):
+        pass  # code
 
 
-# obj1 = BigObject()  # instanciate de class -> create a new object
-# print(type(obj1))
+obj1 = NameOfClass()  # instanciate de class -> create a new object
+print(type(obj1))
 
 
 class PlayerCharacter:

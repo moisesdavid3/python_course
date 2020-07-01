@@ -8,22 +8,29 @@ Debe existir la opción de que el usuario pueda salir del programa.
 Cada vez que el programa finalice una operación se debe mostrar de
 nuevo el menú de opciones
 """
+while (True):
 
-a = int(input('Primer valor de la operacion'))
-b = int(input('Primer valor de la operacion'))
-oper = input('Ingrese la operacion que desea realizar, solo ingrese la primera letra, Suma (S), Resta (R), Multiplicacion (M), Division(D)')
+    a = int(input('Primer valor de la operacion'))
+    b = int(input('Primer valor de la operacion'))
+    oper = input(
+        '''Ingrese la operacion que desea realizar, 
+    solo ingrese la primera letra, 
+    Suma (S), Resta (R), Multiplicacion (M), Division(D)
+    o presione cualquier otra letra para salir: ''')
 
-if oper == 'S':
-    sum = a+b
-    print(sum)
-elif oper == 'R':
-    sum = a-b
-    print(sum)
-elif oper == 'M':
-    sum = a*b
-    print(sum)
-elif oper == 'D':
-    sum = a/b
-    print(sum)
+    if oper == 'S':
+        sum = a+b
+        print(sum)
+    elif oper == 'R':
+        sum = a-b
+        print(sum)
+    elif oper == 'M':
+        sum = a*b
+        print(sum)
+    elif oper == 'D':
+        sum = a/b
+        print(sum)
+    else:
+        break
 
-    
+print(f'Has presionado la letra incorrecta, saliendo del programa')
